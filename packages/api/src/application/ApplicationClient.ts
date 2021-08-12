@@ -1,4 +1,5 @@
 import { IHttpClient } from '../http/HttpClient';
+import FormData = require('form-data')
 
 export enum ApplicationStatus {
   Development = 'development',
@@ -40,18 +41,22 @@ export class ApplicationClient {
     this.http = http
   }
 
-  async create(name: string) {
-    const data = {
-      name,
-      useTemplate: false
+  async create(name: string, template?: string) {
+    const data = new FormData()
+
+    data.append('name', name)
+    data.append('useTemplate', template ? 'true' : 'false')
+
+    if (template) {
+      data.append('templateFile', Buffer.from(template), { filename: 'template.json', contentType: 'application/json' })
     }
+
     const resp = await this.http.post(
       'applications',
       data,
       { contentType: 'form' }
     )
-    console.log(resp.body);
-    return resp
+    return JSON.parse(resp.body)
   }
 
   async list(status: ApplicationStatus) {

@@ -17,6 +17,7 @@
   "author": "Fabian Kästner @fabiankaestner",
   "license": "MIT",
   "dependencies": {
+    "form-data": "^4.0.0",
     "got": "^11.8.2",
     "set-cookie-parser": "^2.4.8"
   },

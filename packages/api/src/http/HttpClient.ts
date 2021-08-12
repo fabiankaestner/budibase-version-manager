@@ -41,12 +41,13 @@ export class HttpClient implements IHttpClient {
     const resp = await got.post({
       url: `${this.baseUrl}/${path}`,
       json: opts.contentType === 'json' ? data : undefined,
-      form: opts.contentType === 'form' ? data : undefined,
+      body: opts.contentType === 'form' ? data : undefined,
       headers: {
         'cookie': this.getCookieHeader()
       }
     });
     return resp;
+
   }
 
   async get(path: string, params?: Record<string, string>) {
