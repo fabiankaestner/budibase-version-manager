@@ -5,6 +5,7 @@ export interface IHttpClient {
 
   post(path: string, data: any, opts: IPostRequestOptions): Promise<Response<string>>
   get(path: string, params?: Record<string, string>): Promise<Response<string>>
+  delete(path: string, params?: Record<string, string>): Promise<Response<string>>
 }
 
 interface IPostRequestOptions {
@@ -50,6 +51,17 @@ export class HttpClient implements IHttpClient {
 
   async get(path: string, params?: Record<string, string>) {
     const resp = await got.get({
+      url: `${this.baseUrl}/${path}`,
+      searchParams: params,
+      headers: {
+        'cookie': this.getCookieHeader()
+      }
+    });
+    return resp;
+  }
+
+  async delete(path: string, params?: Record<string, string>) {
+    const resp = await got.delete({
       url: `${this.baseUrl}/${path}`,
       searchParams: params,
       headers: {

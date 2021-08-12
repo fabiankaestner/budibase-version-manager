@@ -63,4 +63,9 @@ export class ApplicationClient {
     const resp = await this.http.get('backups/export', { appId })
     return resp.body
   }
+
+  async delete(appId: string) {
+    const resp = await this.http.delete(`applications/${appId}`)
+    return resp.body
+  }
 }
