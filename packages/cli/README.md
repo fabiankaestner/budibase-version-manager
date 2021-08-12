@@ -15,11 +15,11 @@ Manage application versions inside Budibase via CLI.
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g budibase-version-manager
+$ npm install -g @budibase-version-manager/cli
 $ bbvm COMMAND
 running command...
 $ bbvm (-v|--version|version)
-budibase-version-manager/0.0.1 win32-x64 node-v14.17.3
+@budibase-version-manager/cli/0.0.1 win32-x64 node-v14.17.3
 $ bbvm --help [COMMAND]
 USAGE
   $ bbvm COMMAND
@@ -29,7 +29,6 @@ USAGE
 # Commands
 <!-- commands -->
 * [`bbvm help [COMMAND]`](#bbvm-help-command)
-* [`bbvm login [FILE]`](#bbvm-login-file)
 
 ## `bbvm help [COMMAND]`
 
@@ -47,20 +46,4 @@ OPTIONS
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.2/src/commands/help.ts)_
-
-## `bbvm login [FILE]`
-
-describe the command here
-
-```
-USAGE
-  $ bbvm login [FILE]
-
-OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
-```
-
-_See code: [src/commands/login.ts](https://github.com/fabiankaestner/budibase-version-manager/blob/v0.0.1/src/commands/login.ts)_
 <!-- commandsstop -->
