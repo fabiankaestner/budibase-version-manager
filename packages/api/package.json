@@ -1,0 +1,26 @@
+{
+  "name": "@budibase-version-manager/api",
+  "version": "0.0.1",
+  "description": "Import/Export applications from Budibase via the internal API.",
+  "main": "dist/index",
+  "types": "dist/index",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/fountapp/budibase-import-export"
+  },
+  "author": "Fabian Kästner @fabiankaestner",
+  "license": "MIT",
+  "dependencies": {
+    "got": "^11.8.2",
+    "set-cookie-parser": "^2.4.8"
+  },
+  "devDependencies": {
+    "typescript": "^4.3.5"
+  }
+}
