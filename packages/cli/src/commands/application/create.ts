@@ -9,11 +9,13 @@ export default class ApplicationCreate extends AuthenticatedCommand {
 
   static args = [{ name: 'name' }]
 
+  static aliases = ['applications:create']
+
   async run() {
     const { flags, args } = this.parse(ApplicationCreate)
 
     try {
-      const resp = await this.api.create_application(args.name)
+      const resp = await this.api.application.create(args.name)
     } catch (e) {
       console.error('Failed to create application.')
       throw e

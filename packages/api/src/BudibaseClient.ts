@@ -1,5 +1,6 @@
 import { HttpClient, IHttpClient, ISessionToken } from "./http/HttpClient";
 import * as SetCookieParser from 'set-cookie-parser'
+import { ApplicationClient } from "./application/ApplicationClient";
 
 export interface IUserInformation {
   email: string,
@@ -14,9 +15,13 @@ export class BudibaseClient {
   baseUrl: string;
   http: IHttpClient;
 
+  application: ApplicationClient
+
   constructor(baseUrl: string, session?: ISessionToken) {
     this.baseUrl = baseUrl
     this.http = new HttpClient(baseUrl, session)
+
+    this.application = new ApplicationClient(this.http)
   }
 
   async login(username: string, password: string): Promise<{ session: ISessionToken, user: IUserInformation }> {
@@ -39,18 +44,5 @@ export class BudibaseClient {
       session,
       user
     }
-  }
-
-  async create_application(name: string) {
-    const data = {
-      name,
-      useTemplate: false
-    }
-    const resp = await this.http.post(
-      'applications',
-      data,
-      { contentType: 'form' }
-    )
-    console.log(resp.body);
   }
 }
