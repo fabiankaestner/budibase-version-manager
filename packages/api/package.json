@@ -1,6 +1,6 @@
 {
   "name": "@budibase-version-manager/api",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Import/Export applications from Budibase via the internal API.",
   "main": "dist/index",
   "types": "dist/index",

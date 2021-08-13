@@ -1,14 +1,14 @@
 {
   "name": "@budibase-version-manager/cli",
   "description": "Manage application versions inside Budibase via CLI.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Fabian Kästner @fabiankaestner",
   "bin": {
     "bbvm": "./bin/run"
   },
   "bugs": "https://github.com/fabiankaestner/budibase-version-manager/issues",
   "dependencies": {
-    "@budibase-version-manager/api": "^0.1.0",
+    "@budibase-version-manager/api": "^0.1.1",
     "@oclif/command": "^1.8.0",
     "@oclif/config": "^1.17.0",
     "@oclif/plugin-help": "^3.2.2",

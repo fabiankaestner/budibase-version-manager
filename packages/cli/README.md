@@ -19,7 +19,7 @@ $ npm install -g @budibase-version-manager/cli
 $ bbvm COMMAND
 running command...
 $ bbvm (-v|--version|version)
-@budibase-version-manager/cli/0.1.0 win32-x64 node-v14.17.3
+@budibase-version-manager/cli/0.1.1 win32-x64 node-v14.17.3
 $ bbvm --help [COMMAND]
 USAGE
   $ bbvm COMMAND
@@ -56,7 +56,7 @@ ALIASES
   $ bbvm applications
 ```
 
-_See code: [src/commands/application/index.ts](https://github.com/fabiankaestner/budibase-version-manager/blob/v0.1.0/src/commands/application/index.ts)_
+_See code: [src/commands/application/index.ts](https://github.com/fabiankaestner/budibase-version-manager/blob/v0.1.1/src/commands/application/index.ts)_
 
 ## `bbvm application:create [NAME]`
 
@@ -76,7 +76,7 @@ ALIASES
   $ bbvm applications:create
 ```
 
-_See code: [src/commands/application/create.ts](https://github.com/fabiankaestner/budibase-version-manager/blob/v0.1.0/src/commands/application/create.ts)_
+_See code: [src/commands/application/create.ts](https://github.com/fabiankaestner/budibase-version-manager/blob/v0.1.1/src/commands/application/create.ts)_
 
 ## `bbvm application:delete [ID]`
 
@@ -94,7 +94,7 @@ ALIASES
   $ bbvm applications:delete
 ```
 
-_See code: [src/commands/application/delete.ts](https://github.com/fabiankaestner/budibase-version-manager/blob/v0.1.0/src/commands/application/delete.ts)_
+_See code: [src/commands/application/delete.ts](https://github.com/fabiankaestner/budibase-version-manager/blob/v0.1.1/src/commands/application/delete.ts)_
 
 ## `bbvm application:export [ID]`
 
@@ -114,7 +114,7 @@ ALIASES
   $ bbvm applications:export
 ```
 
-_See code: [src/commands/application/export.ts](https://github.com/fabiankaestner/budibase-version-manager/blob/v0.1.0/src/commands/application/export.ts)_
+_See code: [src/commands/application/export.ts](https://github.com/fabiankaestner/budibase-version-manager/blob/v0.1.1/src/commands/application/export.ts)_
 
 ## `bbvm help [COMMAND]`
 
@@ -149,7 +149,7 @@ OPTIONS
   -u, --user=user  (required) the user/email to authenticate with.
 ```
 
-_See code: [src/commands/login.ts](https://github.com/fabiankaestner/budibase-version-manager/blob/v0.1.0/src/commands/login.ts)_
+_See code: [src/commands/login.ts](https://github.com/fabiankaestner/budibase-version-manager/blob/v0.1.1/src/commands/login.ts)_
 
 ## `bbvm logout`
 
@@ -164,7 +164,7 @@ OPTIONS
   -h, --help       show CLI help
 ```
 
-_See code: [src/commands/logout.ts](https://github.com/fabiankaestner/budibase-version-manager/blob/v0.1.0/src/commands/logout.ts)_
+_See code: [src/commands/logout.ts](https://github.com/fabiankaestner/budibase-version-manager/blob/v0.1.1/src/commands/logout.ts)_
 
 ## `bbvm modify:datasource [NAME]`
 
@@ -188,7 +188,7 @@ OPTIONS
   --config:user=config:user  new datasource user.
 ```
 
-_See code: [src/commands/modify/datasource.ts](https://github.com/fabiankaestner/budibase-version-manager/blob/v0.1.0/src/commands/modify/datasource.ts)_
+_See code: [src/commands/modify/datasource.ts](https://github.com/fabiankaestner/budibase-version-manager/blob/v0.1.1/src/commands/modify/datasource.ts)_
 
 ## `bbvm status`
 
@@ -203,5 +203,5 @@ OPTIONS
   -h, --help       show CLI help
 ```
 
-_See code: [src/commands/status.ts](https://github.com/fabiankaestner/budibase-version-manager/blob/v0.1.0/src/commands/status.ts)_
+_See code: [src/commands/status.ts](https://github.com/fabiankaestner/budibase-version-manager/blob/v0.1.1/src/commands/status.ts)_
 <!-- commandsstop -->
