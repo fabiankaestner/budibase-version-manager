@@ -23,5 +23,9 @@
   },
   "devDependencies": {
     "typescript": "^4.3.5"
+  },
+  "gitHead": "75c885fe5046bc0d70634410de91bb62cab541b1",
+  "publishConfig": {
+    "access": "public"
   }
 }
